@@ -11,11 +11,9 @@ function generateBot() {
     let hours = Math.floor(totalMinutes / 60);
     let minutes = totalMinutes % 60;
     
-    document.getElementById("result").innerHTML = `
-        <p>Your battle bot has been assembled!</p>
-        <p><strong>Attack Power:</strong> ${num1}, <strong>Defense Level:</strong> ${num2}, <strong>Speed:</strong> ${num3}</p>
-        <p>The most dominant stat is <strong>${biggest}</strong>.</p>
-        <p>Model designation starts with: <strong>${letter}</strong>.</p>
-        <p>Estimated charging time: <strong>${totalMinutes} minutes</strong> (${hours} hours and ${minutes} minutes).</p>
-    `;
+    document.getElementById("result").innerHTML = "<p>Your battle bot has been assembled!</p>" +
+        "<p><strong>Attack Power:</strong> " + num1 + ", <strong>Defense Level:</strong> " + num2 + ", <strong>Speed:</strong> " + num3 + "</p>" +
+        "<p>The most dominant stat is <strong>" + biggest + "</strong>.</p>" +
+        "<p>Model designation starts with: <strong>" + letter + "</strong>.</p>" +
+        "<p>Estimated charging time: <strong>" + totalMinutes + " minutes</strong> (" + hours + " hours and " + minutes + " minutes).</p>";
 }
